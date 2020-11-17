@@ -2,8 +2,20 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li {
+h1 {
+    color: #545457;
+    font-size: 60px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, span {
     font-family: sans-serif;
+}
+
+button {
+    display: block;
+    font-size: 20px;
+    margin: 30px, 0;
+    text-align: center;
 }
 
 /* NAVIGATION */
@@ -45,6 +57,21 @@ header ul li a:hover {
 #header-banner {
     background-image: url("./images/header.jpg");
     height: 400px;
+    padding: 150px 10%;
+}
+
+/* buradan sonra span css yukarıda verildi */
+
+callToAct {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 25px;
+    color: 545454;
+}
+
+#header-banner button {
+    width: 200px;
+    position: absolute;
 }
 
 /* HEADER */
