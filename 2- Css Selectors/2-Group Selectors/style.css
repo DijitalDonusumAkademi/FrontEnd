@@ -1,0 +1,57 @@
+/*
+(*) tüm etiketleri seçer
+(p) tüm p etiketlerini seçer
+(div p) div içindeki tüm p etiketleri
+(div,p) div ve tüm p etiketleri
+(div > p) üst etiketi div olan tüm p etiketleri
+(p ~ div) p ile aynı seviyede tüm div etiketleri
+(p + div) p etiketinden sonra gelen tüm div etiketleri
+*/
+
+/* p{
+    border: 1px solid blue;
+} */
+
+/* div altındaki p etiketlerini seçmek
+div p {
+  border: 1px solid blue;
+} */
+
+/* Container altındaki tüm divleri seçmek
+.container div {
+  border: 1px solid red;
+}*/
+
+/*Container altındaki divlerden class'ı box olanların seçilmesi
+.container div.box{
+    border: 1px solid red;
+}*/
+
+/*Bütün div ve p etiketlerinin seçilmesi
+div,p{
+    border: 1px solid red;
+}*/
+
+/*divlerden sadece class'ı box olanları ve tüm p etiketlerinin seçilmesi
+div.box,p{
+    border:  1px solid red;
+}*/
+
+/*Üst elemanı div olan tüm p etiketlerini seçmek
+div>p{
+    border:  1px solid red;
+}*/
+
+/*p etiketlerinden sonra gelen tüm div etiketlerini seçmek
+  div ile p etiketi aynı seviyede olması gerekmektedir div içerisinde olan p etiketleri parenttır 
+  parentları kapsamamaktadır.
+p~div{
+    border: 1px solid red;
+}*/
+
+/*p etiketinden sonra gelen ilk div etiketinin seçilmesi
+p+div{
+    border: 1px solid red;
+}*/
+
+

@@ -1,0 +1,45 @@
+/*padding:yazı ile çerçeve arasındaki mesafe arttırır
+p[title]{
+    border: 1px solid green;
+    padding: 6px;
+}*/
+
+/*Case Sensitive kısmı dikkatli olmak gerekiyor
+p[title="CSS Selectors"]{
+    border: 1px solid red;
+    padding: 6px;
+}*/
+
+/*İçerisinde kelime geçmesi ile seçelim
+p[title~="Attribute"]{
+    border: 2px solid yellow;
+    background-color: blueviolet;
+}*/
+
+/*Sadece başlangıcında geçenleri seçer
+a[href^=http]{
+    background-color: aqua;
+    font-style: italic;
+}*/
+
+/*Bitenleri seçmek için
+a[href$=com]{
+    color: chartreuse;
+}*/
+
+/*Hem href hem target attribure seçimi yapılması
+a[href="http://www.youtube.com"][target="_blank"]{
+    color: yellow;
+}*/
+
+/*Inputu Text olanları seçebilmek
+input[type="text"]{
+    display: block;
+    width: 500px;
+}*/
+
+/*Inputu Button olanları seçebilmek*/
+
+input[type="button"] {
+    background: #4CAF50;
+}
