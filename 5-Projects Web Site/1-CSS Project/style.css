@@ -7,7 +7,16 @@ h1 {
     font-size: 60px;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span {
     font-family: sans-serif;
 }
 
@@ -16,14 +25,21 @@ button {
     font-size: 20px;
     margin: 30px, 0;
     text-align: center;
+    padding: 15px 30px;
+    transition: 0.5s;
 }
+
+button:hover {
+    transition: 0.5s;
+}
+
 
 /* NAVIGATION */
 
 header {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
     position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: space-between;
 }
@@ -50,15 +66,20 @@ header ul li a:hover {
     border-bottom: solid 2px grey;
 }
 
+
 /* NAVIGATION */
+
 
 /* HEADER */
 
 #header-banner {
     background-image: url("./images/header.jpg");
+    background-size: cover;
+    background-position: center;
     height: 400px;
     padding: 150px 10%;
 }
+
 
 /* buradan sonra span css yukarıda verildi */
 
@@ -72,6 +93,19 @@ callToAct {
 #header-banner button {
     width: 200px;
     position: absolute;
+    left: 50%;
+    margin-top: 200px;
+    margin-left: -100px;
+    background: black;
+    color: white;
+    border: solid 2px black;
 }
+
+#header-banner button:hover {
+    background: white;
+    color: black;
+    border: solid 2px white;
+}
+
 
 /* HEADER */
