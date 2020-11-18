@@ -128,3 +128,7 @@ callToAct {
     box-shadow: 0 10px 10px black;
     padding: 50px 20px;
 }
+
+.block .icon {
+    height: 80px;
+}
