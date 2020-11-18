@@ -127,8 +127,31 @@ callToAct {
     background: white;
     box-shadow: 0 10px 10px black;
     padding: 50px 20px;
+    transition: 0.2s;
 }
 
 .block .icon {
     height: 80px;
+}
+
+.block button {
+    background: transparent;
+    border: solid 2px black;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.block button:hover {
+    background: black;
+    color: white;
+}
+
+.block:hover {
+    background: rgb(235, 235, 235);
+    transition: 0.2s;
+}
+
+.block:hover .icon {
+    transform: rotate(360deg);
+    transition: 0.2s;
 }
