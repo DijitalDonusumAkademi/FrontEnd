@@ -115,6 +115,16 @@ callToAct {
 
 .quicklinks {
     display: flex;
-    width: 60%;
+    width: 60;
     margin: 0 20%;
+}
+
+.block {
+    position: relative;
+    top: -60px;
+    text-align: center;
+    margin: 0 1%;
+    background: white;
+    box-shadow: 0 10px 10px black;
+    padding: 50px 20px;
 }
