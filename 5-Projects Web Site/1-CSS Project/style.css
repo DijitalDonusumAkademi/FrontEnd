@@ -1,157 +1,121 @@
-body {
-    margin: 0;
-}
+<!-- NAVBAR COMPONENT -->
+    <nav>
+      <div>
+        <span>Biznet</span>
+      </div>
 
-h1 {
-    color: #545457;
-    font-size: 60px;
-}
+      <div>
+        <div>
+          <a
+            href="#"
+           
+          >
+            Your Business
+          </a>
+          <a
+            href="#"
+           
+          >
+            Networking
+          </a>
+          <a
+            href="#"
+            
+          >
+            Blog
+          </a>
+        </div>
+        <div>
+          <a
+            href="#"
+            
+            >Login</a
+          >
+        </div>
+      </div>
+    </nav>
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-li,
-span {
-    font-family: sans-serif;
-}
+    <div>
+      <!-- BUTTON COMPONENT -->
+      <button
+        
+      >
+        Find Friends
+      </button>
 
-button {
-    display: block;
-    font-size: 20px;
-    margin: 30px, 0;
-    text-align: center;
-    padding: 15px 30px;
-    transition: 0.5s;
-}
+      <button
+        
+      >
+        Find Groups
+      </button>
 
-button:hover {
-    transition: 0.5s;
-}
+      <!-- ALERT COMPONENT -->
+      <div
+       
+        role="alert"
+      >
+        <strong >Alert!</strong>
+        <span >Please update your password</span>
+      </div>
+    </div>
 
+    <!-- CARD COMPONENT -->
+    <div>
+      <div >
+        <img src="https://i.ibb.co/vX8pYzZ/logo-only.png" alt=""  />
+      </div>
+      <div >
+        <h4>Traversy Media</h4>
+        <p>You have a new message!</p>
+      </div>
+    </div>
 
-/* NAVIGATION */
-
-header {
-    position: fixed;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    justify-content: space-between;
-}
-
-header img {
-    max-height: 60px;
-    margin: 10px;
-}
-
-header ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 20px;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-header ul li a:hover {
-    text-decoration: none;
-    color: grey;
-    border-bottom: solid 2px grey;
-}
-
-
-/* NAVIGATION */
-
-
-/* HEADER */
-
-#header-banner {
-    background-image: url("./images/header.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    padding: 150px 10%;
-}
-
-
-/* buradan sonra span css yukarıda verildi */
-
-callToAct {
-    font-style: italic;
-    font-weight: 200;
-    font-size: 25px;
-    color: 545454;
-}
-
-#header-banner button {
-    width: 200px;
-    position: absolute;
-    left: 50%;
-    margin-top: 200px;
-    margin-left: -100px;
-    background: black;
-    color: white;
-    border: solid 2px black;
-}
-
-#header-banner button:hover {
-    background: white;
-    color: black;
-    border: solid 2px white;
-}
-
-
-/* HEADER */
-
-
-/*QUICK LINKS*/
-
-.quicklinks {
-    display: flex;
-    width: 60;
-    margin: 0 20%;
-}
-
-.block {
-    position: relative;
-    top: -60px;
-    text-align: center;
-    margin: 0 1%;
-    background: white;
-    box-shadow: 0 10px 10px black;
-    padding: 50px 20px;
-    transition: 0.2s;
-}
-
-.block .icon {
-    height: 80px;
-}
-
-.block button {
-    background: transparent;
-    border: solid 2px black;
-    margin: auto;
-    margin-top: 70px;
-}
-
-.block button:hover {
-    background: black;
-    color: white;
-}
-
-.block:hover {
-    background: rgb(235, 235, 235);
-    transition: 0.2s;
-}
-
-.block:hover .icon {
-    transform: rotate(360deg);
-    transition: 0.2s;
-}
+    <!-- CARD COLUMNS -->
+    <div>
+      <!-- Flex on med screens and up -->
+      <div>
+        <div
+          
+        >
+          <div >
+            <div >
+              <img  src="https://i.ibb.co/mJJNkTJ/img2.jpg" alt="" />
+            </div>
+            <div >
+              <div
+                
+              >
+                Networking
+              </div>
+              <a
+                href="#"
+               
+                >Finding connections to help your business grow</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          
+        >
+          <div>
+            <div >
+              <img src="https://i.ibb.co/w4wGYvQ/img1.jpg
+" alt="" />
+            </div>
+            <div">
+              <div
+               
+              >
+                Marketing
+              </div>
+              <a
+                href="#"
+                
+                >Finding customers for your new business</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
