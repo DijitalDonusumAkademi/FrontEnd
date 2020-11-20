@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.demo {
+    width: 700px;
+    height: 700px;
+    background: #009688;
+    margin: 50px auto;
+    /*Kutularımızı Yatay Yan yana*/
+    display: flex;
+}
+
+.demo-inner {
+    /*width: 150px;*/
+    height: 150px;
+    background: red;
+    font-size: 24px;
+    color: #fff;
+    /* Her Sütunu 4 e böler eşit olarak */
+    flex-basis: 25%;
+}
+
+.demo-inner:nth-child(1) {
+    background: #8bc34a;
+    /*İlgili Kutu Sayfamızın %50 sini kaplıyor*/
+    /*flex-basis: 50%;*/
+    /* flex-basis: 30%; */
+    /* flex-grow: 2; */
+}
+
+.demo-inner:nth-child(2) {
+    background: #ffeb3b;
+    /* flex-basis: 20%; */
+}
+
+.demo-inner:nth-child(3) {
+    background: black;
+    /* flex-basis: 40%; */
+}
+
+.demo-inner:nth-child(4) {
+    background: blue;
+    /*flex-basis: 10%;*/
+    /*Kalan Alanı Kaplamak İçin*/
+    /*flex: 1;*/
+}

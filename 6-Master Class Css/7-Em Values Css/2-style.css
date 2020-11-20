@@ -1,0 +1,23 @@
+/* 
+em      RELATIVE depends on parent
+1em     16 px default browser style
+1em     base value
+*/
+
+
+/* 
+Relative => Browser yazı tipi değerleri üzerinden değer atar.
+Absolute => Bilinen Font Size Değerleri atar.
+*/
+
+.relative {
+    font-size: 2em;
+}
+
+.absolute {
+    font-size: 32px;
+}
+
+div {
+    font-size: 5px;
+}

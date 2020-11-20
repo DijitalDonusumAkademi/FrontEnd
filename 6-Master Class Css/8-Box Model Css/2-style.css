@@ -1,0 +1,21 @@
+/* 
+CSS BOX MODEL
+*/
+
+h1 {
+    background: red;
+    /* Padding ilgili çerçeveden uzaklaştırır üst kısımdan */
+    /* Padding Content ile Border Arasındaki Yerleşimi Sağlamaktadır. */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 50px;
+}
+
+p {
+    background: blue;
+    /* Her taraftan 50 px boşluk verir. */
+    /* padding: 50px; */
+    /* padding: 30px 60px; */
+    padding: 20px 40px 60px 10px;
+}
