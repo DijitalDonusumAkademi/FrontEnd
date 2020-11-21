@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Grand+Hotel&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 :root {
-    --slantedText: 'Grand Hotel', cursive;
+    --slantedText: "Grand Hotel", cursive;
     --primaryColor: #698f3f;
     --secondaryColor: #fca311;
     --mainDark: #3a3e3b;
@@ -17,22 +17,12 @@
 }
 
 body {
-    font-family: 'Catamaran', sans-serif;
+    font-family: "Catamaran", sans-serif;
     line-height: 1.5;
 }
 
-h1 {
-    font-family: var(--slantedText);
-}
 
-
-/* helper/utility class */
-
-
-/* banner-title dan sonra yazıcam */
-
-
-/* link için stil */
+/* helper/utility classes */
 
 a {
     text-decoration: none;
@@ -55,13 +45,33 @@ a {
 
 .clearfix::after,
 .clearfix::before {
-    content: '';
+    content: "";
     clear: both;
     display: table;
 }
 
 
 /* globals */
+
+.section-center {
+    padding: 4rem 0;
+    width: 80vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    font-family: var(--slantedText);
+    letter-spacing: var(--letterSpacing);
+    text-transform: capitalize;
+    color: var(--primaryColor);
+}
+
+.section-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
 
 
 /* navbar */
@@ -71,7 +81,7 @@ a {
 
 .header {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/main-bcg.jpeg') center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/main-bcg.jpeg") center/cover no-repeat fixed;
     position: relative;
 }
 
@@ -103,11 +113,7 @@ a {
     line-height: 1.3;
     /* animation */
     animation: slideFromLeft 5s ease-in-out 1;
-    /* buradan sonra helper utility yaz*/
 }
-
-
-/* banner button style */
 
 .main-btn,
 .banner-btn {
@@ -121,7 +127,7 @@ a {
     outline-offset: 4px;
     cursor: pointer;
     margin-top: 2rem;
-    transition: var(--mainWhite);
+    transition: var(--mainTransition);
 }
 
 .main-btn:hover,
@@ -137,16 +143,10 @@ a {
 }
 
 
-/* end header */
+/* end  header */
 
 
-/* animations */
-
-
-/* ilk olarak burası yazılıyor ikinci olarak banner-btn animation */
-
-
-/* explore butonu için animasyon */
+/* animations  */
 
 @keyframes show {
     0% {
@@ -158,9 +158,6 @@ a {
         opacity: 1;
     }
 }
-
-
-/* sub-title animations */
 
 @keyframes slideFromRight {
     0% {
@@ -193,18 +190,18 @@ a {
 }
 
 
-/* end of animations */
+/* end of animations  */
 
 
 /* content divider */
 
 .content-divider {
     height: 0.5rem;
-    background: linear-gradient(to left, var(--primaryColor), (var(--secondaryColor), var(--primaryColor)));
+    background: linear-gradient( to left, var(--primaryColor), var(--secondaryColor), var(--primaryColor));
 }
 
 
-/* end content divider */
+/*end of content divider */
 
 
 /* skills */
@@ -218,9 +215,6 @@ a {
     text-align: center;
     transition: var(--mainTransition);
 }
-
-
-/* İlk olarak html span etiketlerine class verelim */
 
 .skill-icon {
     font-size: 2.5rem;
@@ -256,21 +250,62 @@ a {
     transform: translateY(-5px);
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width: 576px) {
     .skill {
         float: left;
         width: 50%;
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     .skill {
         width: 25%;
     }
 }
 
 
-/* buradanın ardından clearfix düzenlenmeli */
-
-
 /* end of skills */
+
+
+/* about  */
+
+.about-img,
+.about-info {
+    padding: 2rem 0;
+}
+
+.about-picture-container {
+    background: var(--primaryColor);
+    border: 0.5rem solid var(--primaryColor);
+    border-radius: 1rem;
+    /* overflow */
+    overflow: hidden;
+}
+
+.about-picture {
+    width: 100%;
+    display: block;
+    transition: var(--mainTransition);
+}
+
+.about-picture-container:hover .about-picture {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+.about-text {
+    margin: 1rem 0;
+    max-width: 26rem;
+}
+
+@media screen and (min-width: 992px) {
+    .about-img,
+    .about-info {
+        float: left;
+        width: 50%;
+        padding: 2rem;
+    }
+}
+
+
+/* end of about  */
