@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEX ITEM ORDER</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /*  
+        Order all the children order-0 by 
+        Sayfamızda elemanlarımızı dizmede çok güzeldir html kodunuz aynı kalır siz css ile yerleşim yaparsınız.
+        */
+        
+        .container {
+            display: flex;
+            /*flex-direction: row;*/
+            flex-direction: column;
+        }
+        
+        .box-3 {
+            /*3. kutuyu en başa getirir*/
+            order: -1;
+        }
+        
+        .box-4 {
+            /*4. kutuyu en sona alır*/
+            order: 1;
+        }
+        
+        .box-1 {
+            /*1. kutu en sona geldi*/
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+
+        <!-- <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div> -->
+    </div>
+</body>
+
+</html>

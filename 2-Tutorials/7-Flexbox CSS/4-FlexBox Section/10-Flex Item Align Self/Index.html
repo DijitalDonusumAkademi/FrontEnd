@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEX ITEM ALIGN SELF</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /*  
+        align-self
+        */
+        
+        .container {
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            /*align-items: start;*/
+            align-items: center;
+        }
+        
+        .box-3 {
+            /*flex-end ilgili kutuyu en alta alır*/
+            align-self: flex-end;
+        }
+        
+        .box-4 {
+            /*strech ilgili  kutuyu en alta uzatır*/
+            align-self: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+
+        <!-- <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div>
+        <div class="box generic">G</div> -->
+    </div>
+</body>
+
+</html>

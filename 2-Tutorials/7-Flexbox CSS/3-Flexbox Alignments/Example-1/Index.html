@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        .container {
+            background-color: #f2f2f2;
+            padding: 15px;
+            display: flex;
+            /*justify content = > elemanları yatayda sıralar*/
+            /*justify-content: center; ortalar*/
+            /*justify-content: flex-start;* sağa hizalar*/
+            /*justify-content: flex-end; sola hizalar*/
+            /*justify-content: space-between; her elemanın arasında eşit boşluk bırakır*/
+            /*justify-content: space-around; sağ ve solda 1 x boşluk aralarda 2x */
+            /*justify-content: space-evenly; her yerden eşit boşluk bırakılır */
+            flex-wrap: wrap-reverse;
+        }
+        
+        .item {
+            background-color: red;
+            padding: 40px;
+            margin: 30px;
+            color: yellow;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+</body>
+
+</html>
