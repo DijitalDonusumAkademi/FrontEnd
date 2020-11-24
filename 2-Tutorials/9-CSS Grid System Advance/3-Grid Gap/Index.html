@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID GAP</title>
+    <style>
+        .grid-container {
+            /*div altındaki çocuklar olur*/
+            display: grid;
+            /*Genişliği Kolon Olarak Üçe Böler*/
+            grid-template-columns: auto auto auto auto;
+            /*alt alta boşluk verir grid-row-gap*/
+            /*grid-row-gap: 50px;*/
+            /*yan yana boşluk verir*/
+            /*grid-column-gap: 100px;*/
+            /*tek satırda nasıl yapabilirim
+              ilk yazılan column ikinci yazılan row ifade eder.
+            */
+            grid-gap: 50px 100px;
+            background-color: darkblue;
+            padding: 10px;
+        }
+        
+        .grid-item {
+            background-color: aquamarine;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            border: 1px solid red;
+        }
+    </style>
+
+    <!-- 
+        Grid GAP Alt alta kutularda boşluk vermek istenirse kullanılabilir.
+        Alta boşluk vermek için Grid row gap 
+        Yandaki boşluk ise Grid Column gap
+     -->
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+
+</html>
